@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { LoginComponent } from './login/login.component';
 import {RouterModule} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {RouterModule} from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
