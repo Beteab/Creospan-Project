@@ -7,18 +7,22 @@ import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { LoginComponent } from './login/login.component';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     ListEmployeeComponent,
-    LoginComponent
+    LoginComponent,
+    AddEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
